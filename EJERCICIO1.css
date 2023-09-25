@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 20px;
+}
+
+.yellow{
+    width: 200px;
+    height: 200px;
+    background-color: #F9F871;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.orange{
+    width: 200px;
+    height: 200px;
+    background-color: #FFC75F;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.red{
+    width: 200px;
+    height: 200px;
+    background-color: #e44e71;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}

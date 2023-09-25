@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EJERCICIO2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,600&family=Nunito:ital@0;1&family=Poppins:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1>Ejercicio 2</h1>
+        <div class="contenedor">
+            <label for="Comentario">Ingrese comentario:</label>
+            <textarea name="Comentario" id="comentario" cols="30" rows="8"></textarea>
+            <p>Contador de caracteres: <span id="contador"></span></p>
+        </div>
+
+    <script>
+
+        let textoTarea = document.getElementById('comentario');
+        let textoContador = document.getElementById('contador');
+        textoTarea.addEventListener("input", function() {
+            let texto = textoTarea.value;
+            textoContador = texto.length;
+            console.log(`${texto.length} caracteres`)
+            document.getElementById('contador').innerHTML = texto.length;
+        });
+
+    </script>
+
+</body>
+</html>
